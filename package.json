@@ -4,6 +4,11 @@
   "description": "A simple switch component for ReactJS",
   "homepage": "https://github.com/kokilaw/simple-react-switch/",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "bugs": {
     "url": "https://github.com/kokilaw/simple-react-switch/issues"
   },
@@ -12,10 +17,6 @@
     "name": "Kokila Widyaratna",
     "url": "https://kokilaw.github.io"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kokilaw/simple-react-switch.git"
