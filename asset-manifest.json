@@ -1,13 +1,13 @@
 {
-  "main.css": "/kokilaw/simple-react-switch/static/css/main.786d84ac.chunk.css",
-  "main.js": "/kokilaw/simple-react-switch/static/js/main.c1e3b310.chunk.js",
-  "main.js.map": "/kokilaw/simple-react-switch/static/js/main.c1e3b310.chunk.js.map",
-  "static/js/1.1f897220.chunk.js": "/kokilaw/simple-react-switch/static/js/1.1f897220.chunk.js",
-  "static/js/1.1f897220.chunk.js.map": "/kokilaw/simple-react-switch/static/js/1.1f897220.chunk.js.map",
-  "runtime~main.js": "/kokilaw/simple-react-switch/static/js/runtime~main.90492475.js",
-  "runtime~main.js.map": "/kokilaw/simple-react-switch/static/js/runtime~main.90492475.js.map",
-  "static/css/main.786d84ac.chunk.css.map": "/kokilaw/simple-react-switch/static/css/main.786d84ac.chunk.css.map",
-  "index.html": "/kokilaw/simple-react-switch/index.html",
-  "precache-manifest.a25a32ca6b412231c3c6d1425b4e23e0.js": "/kokilaw/simple-react-switch/precache-manifest.a25a32ca6b412231c3c6d1425b4e23e0.js",
-  "service-worker.js": "/kokilaw/simple-react-switch/service-worker.js"
+  "main.css": "/simple-react-switch/static/css/main.786d84ac.chunk.css",
+  "main.js": "/simple-react-switch/static/js/main.c1e3b310.chunk.js",
+  "main.js.map": "/simple-react-switch/static/js/main.c1e3b310.chunk.js.map",
+  "static/js/1.4ae4159f.chunk.js": "/simple-react-switch/static/js/1.4ae4159f.chunk.js",
+  "static/js/1.4ae4159f.chunk.js.map": "/simple-react-switch/static/js/1.4ae4159f.chunk.js.map",
+  "runtime~main.js": "/simple-react-switch/static/js/runtime~main.fec58844.js",
+  "runtime~main.js.map": "/simple-react-switch/static/js/runtime~main.fec58844.js.map",
+  "static/css/main.786d84ac.chunk.css.map": "/simple-react-switch/static/css/main.786d84ac.chunk.css.map",
+  "index.html": "/simple-react-switch/index.html",
+  "precache-manifest.043183b117a3a76a98ca8f06a6b3c7c4.js": "/simple-react-switch/precache-manifest.043183b117a3a76a98ca8f06a6b3c7c4.js",
+  "service-worker.js": "/simple-react-switch/service-worker.js"
 }

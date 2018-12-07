@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kokilaw/simple-react-switch/precache-manifest.a25a32ca6b412231c3c6d1425b4e23e0.js"
+  "/simple-react-switch/precache-manifest.043183b117a3a76a98ca8f06a6b3c7c4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/kokilaw/simple-react-switch/index.html", {
+workbox.routing.registerNavigationRoute("/simple-react-switch/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
