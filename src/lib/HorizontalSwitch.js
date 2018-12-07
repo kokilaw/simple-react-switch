@@ -3,22 +3,28 @@ import PropTypes from "prop-types";
 
 import { HorizontalWrapper } from "./wrappers";
 
-import twoParamFuncPropType from "./util/twoParamFuncPropType";
-
 class HorizontalSwitch extends Component {
   onChange = e => {
     const isChecked = e.target.checked;
     if (this.props.onStateChange !== undefined) {
-      this.props.onStateChange(isChecked, this.props.key);
+      this.props.onStateChange(isChecked, this.props.id, e);
     }
   };
 
   render() {
-    let { defaultChecked, disabled } = this.props;
+    let { defaultChecked, disabled, id } = this.props;
+    let { onColor, offColor, foregroundColor, disabledColor } = this.props;
 
     return (
-      <HorizontalWrapper>
+      <HorizontalWrapper
+        disabled={disabled}
+        onColor={onColor}
+        offColor={offColor}
+        foregroundColor={foregroundColor}
+        disabledColor={disabledColor}
+      >
         <input
+          id={id}
           type="checkbox"
           defaultChecked={defaultChecked}
           disabled={disabled}
@@ -31,16 +37,20 @@ class HorizontalSwitch extends Component {
 }
 
 HorizontalSwitch.propTypes = {
-  onStateChange: twoParamFuncPropType,
+  id: PropTypes.string.isRequired,
+  onStateChange: PropTypes.func.isRequired,
   defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
-  key: PropTypes.string
+  onColor: PropTypes.string,
+  offColor: PropTypes.string,
+  foregroundColor: PropTypes.string,
+  disabledColor: PropTypes.string
 };
 
 HorizontalSwitch.defaultProps = {
   defaultChecked: false,
   disabled: false,
-  key: "sample-key"
+  id: "sample-key"
 };
 
 export default HorizontalSwitch;

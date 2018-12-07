@@ -27,22 +27,20 @@ import { HorizontalSwitch } from "simple-react-switch";
 
 class App extends Component {
 
-  handleChange = (isChecked, key) => {
+  handleChange = (isChecked, key, event) => {
     // Take action...
   };
 
   render() {
     return (
       <div>
-        <HorizontalSwitch
-          onStateChange={this.handleChange}
-          key={"sample-key"}
-        />
+        <HorizontalSwitch onStateChange={this.handleChange} id={"sample-key"} />
       </div>
     );
   }
-
+  
 }
+
 ```
 
 ## Available Scripts

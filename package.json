@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "A simple switch component for ReactJS",
   "homepage": ".",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "bugs": {
     "url": "https://github.com/kokilaw/simple-react-switch/issues"
   },
