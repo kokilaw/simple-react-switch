@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HorizontalSwitch renders properly 1`] = `
-<div>
-  Hello World!
-</div>
+<label
+  className="sc-bdVaJa cPwplN"
+>
+  <input
+    type="checkbox"
+  />
+  <span />
+</label>
 `;

@@ -1,5 +1,10 @@
 const twoParamFuncPropType = (props, propName, componentName) => {
   var fn = props[propName];
+
+  if (fn === undefined) {
+    return;
+  }
+
   if (
     !fn.prototype ||
     (typeof fn.prototype.constructor !== "function" &&
