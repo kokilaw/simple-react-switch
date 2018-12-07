@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import { rgba } from "polished";
+import {rgba} from "polished";
 import PropTypes from "prop-types";
 
-import { Blob, BlobChecked } from "./HorizontalAnimations";
+import {Blob, BlobChecked} from "./HorizontalAnimations";
 
 import hexColorPropType from "../util/hexColorPropType";
 
 const HorizontalWrapper = styled.label.attrs({
-  onColor: props => (props.disabled ? props.disabledColor : props.onColor),
-  offColor: props => (props.disabled ? props.disabledColor : props.offColor),
-  offColorShadow: props => rgba(props.offColor, 0.2),
-  onColorShadow: props => rgba(props.onColor, 0.2),
-  blobChecked: props => BlobChecked,
-  blob: props => Blob
+    onColor: props => (props.disabled ? props.disabledColor : props.onColor),
+    offColor: props => (props.disabled ? props.disabledColor : props.offColor),
+    offColorShadow: props => rgba(props.offColor, 0.2),
+    onColorShadow: props => rgba(props.onColor, 0.2),
+    blobChecked: props => BlobChecked,
+    blob: props => Blob
 })`
   cursor: pointer;
   input {
@@ -90,19 +90,19 @@ const HorizontalWrapper = styled.label.attrs({
 `;
 
 HorizontalWrapper.propTypes = {
-  onColor: hexColorPropType,
-  offColor: hexColorPropType,
-  foregroundColor: hexColorPropType,
-  disabledColor: hexColorPropType,
-  disable: PropTypes.bool
+    onColor: hexColorPropType,
+    offColor: hexColorPropType,
+    foregroundColor: hexColorPropType,
+    disabledColor: hexColorPropType,
+    disable: PropTypes.bool
 };
 
 HorizontalWrapper.defaultProps = {
-  onColor: "#48EA8B",
-  offColor: "#FF4651",
-  disabledColor: "#D3D3D3",
-  foregroundColor: "#fff",
-  disabled: false
+    onColor: "#48EA8B",
+    offColor: "#FF4651",
+    disabledColor: "#D3D3D3",
+    foregroundColor: "#fff",
+    disabled: false
 };
 
 export default HorizontalWrapper;
