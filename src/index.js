@@ -2,23 +2,21 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import "./style.css";
-import HorizontalSwitch from "./lib/HorizontalSwitch";
+import { HorizontalSwitch} from "./lib";
 
 class App extends Component {
 
-  state = {
-    isChecked: false
-  };
-
   handleChange = (isChecked, key) => {
-    console.log(key)
-    console.log(isChecked)
+    // Take action...
   };
 
   render() {
     return (
       <div>
-        <HorizontalSwitch onStateChange={this.handleChange} />
+        <HorizontalSwitch
+          onStateChange={this.handleChange}
+          key={"sample-key"}
+        />
       </div>
     );
   }

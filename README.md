@@ -1,4 +1,4 @@
-#  simple-react-switch
+# simple-react-switch
 
 [![npm](https://img.shields.io/npm/v/simple-react-switch.svg)](https://www.npmjs.com/package/simple-react-switch)
 
@@ -11,7 +11,7 @@ Referred most of the styling from [this codepen.io project](https://codepen.io/a
 <br />
 <br />
 
-Demo is available <a href="https://kokilaw.github.io/react-simple-switch/" target="_blank">here</a>.
+Demo is available <a href="https://kokilaw.github.io/simple-react-switch/" target="_blank">here</a>.
 
 ## Installation
 
@@ -22,38 +22,26 @@ npm install simple-react-switch
 ## Usage
 
 ```javascript
-import React, {Component} from "react";
-import ReactSimpleSwitch from "react-simple-switch";
+import React, { Component } from "react";
+import { HorizontalSwitch } from "simple-react-switch";
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            isChecked: false
-        };
-        this.handleOnChange = this.handleOnChange.bind(this);
-    }
+  handleChange = (isChecked, key) => {
+    // Take action...
+  };
 
-    handleOnChange(isChecked) {
-        this.setState({isChecked: !this.state.isChecked});
-    }
+  render() {
+    return (
+      <div>
+        <HorizontalSwitch
+          onStateChange={this.handleChange}
+          key={"sample-key"}
+        />
+      </div>
+    );
+  }
 
-    render() {
-
-        let {isChecked} = this.state;
-
-        return (
-            <div>
-                <div className={styles.centerContents}>
-                    <ReactSimpleSwitch onChange={this.handleOnChange} defaultChecked={false}/>
-                </div>
-                <div className={styles.marginTop20}>
-                    Current State of the Switch: {isChecked ? 'On' : 'Off'}
-                </div>
-            </div>
-        );
-    }
 }
 ```
 
