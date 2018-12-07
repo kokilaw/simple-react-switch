@@ -43,6 +43,20 @@ class App extends Component {
 
 ```
 
+## API
+
+| Prop                                  | Type              | Default                                                                                  | Description                                                                                                                                                                                                               |
+| ------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| defaultChecked                        | bool              | false                                                                                    | If true, the switch is set to checked. If false, it is not checked.                                                                                                                                                       |
+| id                                    | string            | **Required**                                                                               | Set as an attribute to the embedded checkbox. This is useful for the associated label, which can point to the id in its htmlFor attribute.                                                                                |
+| onStateChange _([isChecked], [id], [event])_ | func              | **Required**                                                                      | Invoked when the user toggles the switch. It is passed three arguments: _isChecked_, which is a boolean that describes the presumed future state of the checked prop (1), the event object (2) and the id prop (3). |
+| disabled                              | bool              | false                                                                                    | When disabled, the switch will no longer be interactive and its colors will be greyed out.                                                                                                                                |
+| offColor                              | string            | '#FF4651'                                                                                   | The switch will take on this color when it is _not_ checked. Only accepts hex-colors.                                                                                                                                     |
+| onColor                               | string            | '#48EA8B'                                                                                   | The switch will take on this color when it is checked. Only accepts hex-colors.                                                                                                                                           |
+| foregroundColor                               | string            | '#fff'                                                                                   | The toggle icon with animation will take on this color. Only accepts hex-colors.                                                                                                                                           |
+| disabledColor                               | string            | '#D3D3D3'                                                                                   | The switch will take on this color when disabled. Only accepts hex-colors.                                                                                                                                           |
+
+
 ## Available Scripts
 
 In the project directory, you can run:
