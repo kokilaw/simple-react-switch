@@ -1,31 +1,28 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { rgba } from "polished";
 
-import { Blob, BlobChecked } from "./animations";
 import { HorizontalWrapper } from "./wrappers";
 
-import hexColorPropType from "./util/hexColorPropType";
 import twoParamFuncPropType from "./util/twoParamFuncPropType";
 
 class HorizontalSwitch extends Component {
+  onChange = e => {
+    const isChecked = e.target.checked;
+    if (this.props.onStateChange !== undefined) {
+      this.props.onStateChange(isChecked, this.props.key);
+    }
+  };
+
   render() {
-    let { bgUnCheckedColor, bgCheckedColor } = this.props;
+    let { defaultChecked, disabled } = this.props;
 
     return (
-      <HorizontalWrapper
-        blob={Blob}
-        blobChecked={BlobChecked}
-        colorOff={bgUnCheckedColor}
-        colorOffShadow={rgba(bgUnCheckedColor, 0.2)}
-        colorOn={bgCheckedColor}
-        colorOnShadow={rgba(bgCheckedColor, 0.2)}
-      >
+      <HorizontalWrapper>
         <input
           type="checkbox"
-          // defaultChecked={defaultChecked}
-          // disabled={disabled}
-          // onChange={this.handleChange}
+          defaultChecked={defaultChecked}
+          disabled={disabled}
+          onChange={this.onChange}
         />
         <span />
       </HorizontalWrapper>
@@ -34,21 +31,15 @@ class HorizontalSwitch extends Component {
 }
 
 HorizontalSwitch.propTypes = {
+  onStateChange: twoParamFuncPropType,
   defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
-  onChange: twoParamFuncPropType,
-  key: PropTypes.string,
-  bgCheckedColor: hexColorPropType,
-  bgUnCheckedColor: hexColorPropType,
-  foregroundColor: hexColorPropType
+  key: PropTypes.string
 };
 
 HorizontalSwitch.defaultProps = {
   defaultChecked: false,
   disabled: false,
-  bgCheckedColor: "#48EA8B",
-  bgUnCheckedColor: "#FF4651",
-  foregroundColor: "#fff",
   key: "sample-key"
 };
 

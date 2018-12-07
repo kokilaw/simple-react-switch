@@ -2,7 +2,7 @@ const twoParamFuncPropType = (props, propName, componentName) => {
   var fn = props[propName];
 
   if (fn === undefined) {
-    return;
+    return new Error(propName + " method must be a provided to handle the switch state changes");
   }
 
   if (
