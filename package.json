@@ -1,6 +1,20 @@
 {
   "name": "simple-react-switch",
   "version": "0.1.0",
+  "description": "A simple switch component for ReactJS",
+  "homepage": "https://github.com/kokilaw/simple-react-switch#readme",
+  "bugs": {
+    "url": "https://github.com/kokilaw/simple-react-switch/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kokila Widyaratna",
+    "url": "https://kokilaw.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokilaw/simple-react-switch.git"
+  },
   "dependencies": {
     "polished": "^2.3.1",
     "prop-types": "^15.6.2",
@@ -14,7 +28,9 @@
     "build": "react-scripts build",
     "build-package": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore '__tests__','spec.js','test.js','__snapshots__'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,6 +46,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-polished": "^1.1.0",
     "babel-preset-react-app": "^6.1.0",
+    "gh-pages": "^2.0.1",
     "react-test-renderer": "^16.6.3"
   }
 }
