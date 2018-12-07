@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HorizontalSwitch onStateChange={this.handleChange} id={"sample-key"} />
+        <HorizontalSwitch onStateChange={this.handleChange} id={"123456"} />
       </div>
     );
   }
