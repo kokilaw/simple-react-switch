@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { rgba } from "polished";
 
 import { Blob, BlobChecked } from "./animations";
 import { HorizontalWrapper } from "./wrappers";
@@ -16,7 +17,9 @@ class HorizontalSwitch extends Component {
         blob={Blob}
         blobChecked={BlobChecked}
         colorOff={bgUnCheckedColor}
+        colorOffShadow={rgba(bgUnCheckedColor, 0.2)}
         colorOn={bgCheckedColor}
+        colorOnShadow={rgba(bgCheckedColor, 0.2)}
       >
         <input
           type="checkbox"
@@ -43,8 +46,8 @@ HorizontalSwitch.propTypes = {
 HorizontalSwitch.defaultProps = {
   defaultChecked: false,
   disabled: false,
-  bgCheckedColor: "#FF4651",
-  bgUnCheckedColor: "#48EA8B",
+  bgCheckedColor: "#48EA8B",
+  bgUnCheckedColor: "#FF4651",
   foregroundColor: "#fff",
   key: "sample-key"
 };

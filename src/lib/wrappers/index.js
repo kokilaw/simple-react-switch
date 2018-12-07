@@ -12,7 +12,7 @@ const HorizontalWrapper = styled.label`
       display: block;
       position: relative;
       background: ${props => props.colorOff};
-      box-shadow: 0 8px 16px -1px rgba(${props => props.colorOff}, 0.2);
+      box-shadow: 0 8px 16px -1px ${props => props.colorOffShadow};
       &:before,
       &:after {
         content: "";
@@ -45,7 +45,7 @@ const HorizontalWrapper = styled.label`
     &:checked {
       & + span {
         background: ${props => props.colorOn};
-        box-shadow: 0 8px 16px -1px rgba(${props => props.colorOn}, 0.2);
+        box-shadow: 0 8px 16px -1px ${props => props.colorOnShadow};
         &:before {
           width: 0px;
           border-radius: 3px;
