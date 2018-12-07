@@ -2,7 +2,7 @@
   "name": "simple-react-switch",
   "version": "0.1.0",
   "description": "A simple switch component for ReactJS",
-  "homepage": "https://github.com/kokilaw/simple-react-switch#readme",
+  "homepage": ".",
   "bugs": {
     "url": "https://github.com/kokilaw/simple-react-switch/issues"
   },
