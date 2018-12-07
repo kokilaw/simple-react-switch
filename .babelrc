@@ -1,0 +1,4 @@
+{
+  "presets": ["react-app"],
+  "ignore": ["**/__tests__", "**/*.test.js", "**/__snapshots__"]
+}

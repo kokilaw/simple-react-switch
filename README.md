@@ -1,4 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  simple-react-switch
+
+[![npm](https://img.shields.io/npm/v/simple-react-switch.svg)](https://www.npmjs.com/package/simple-react-switch)
+
+A simple toggle switch component for ReactJS inspired from this cool [switch animation](https://dribbble.com/shots/5429846-Switcher-XLIV) by [Oleg Frolov](https://dribbble.com/Volorf).
+
+Referred most of the styling from [this codepen.io project](https://codepen.io/aaroniker/pen/oaQdQZ) by [Aaron Iker](https://codepen.io/aaroniker/).
+
+<img src="/art/preview.gif" alt="sample" title="sample" width="400" height="300" align="center" vspace="52" />
+
+<br />
+<br />
+
+Demo is available <a href="https://kokilaw.github.io/react-simple-switch/" target="_blank">here</a>.
+
+## Installation
+
+```bash
+npm install simple-react-switch
+```
+
+## Usage
+
+```javascript
+import React, {Component} from "react";
+import ReactSimpleSwitch from "react-simple-switch";
+
+class App extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isChecked: false
+        };
+        this.handleOnChange = this.handleOnChange.bind(this);
+    }
+
+    handleOnChange(isChecked) {
+        this.setState({isChecked: !this.state.isChecked});
+    }
+
+    render() {
+
+        let {isChecked} = this.state;
+
+        return (
+            <div>
+                <div className={styles.centerContents}>
+                    <ReactSimpleSwitch onChange={this.handleOnChange} defaultChecked={false}/>
+                </div>
+                <div className={styles.marginTop20}>
+                    Current State of the Switch: {isChecked ? 'On' : 'Off'}
+                </div>
+            </div>
+        );
+    }
+}
+```
 
 ## Available Scripts
 
@@ -26,16 +83,6 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
