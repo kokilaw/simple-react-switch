@@ -1,4 +1,4 @@
-import { keyframes } from "styled-components";
+import {keyframes} from "styled-components";
 
 const Blob = keyframes`
   0%, 100% {
@@ -34,4 +34,4 @@ const BlobChecked = keyframes`
   }
 `;
 
-export { Blob, BlobChecked };
+export {Blob, BlobChecked};

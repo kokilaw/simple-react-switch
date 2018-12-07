@@ -1,2 +1,3 @@
 import HorizontalWrapper from "./HorizontalWrapper";
-export { HorizontalWrapper };
+
+export {HorizontalWrapper};

@@ -1,2 +1,3 @@
-import HorizontalSwitch from "./HorizontalSwitch";
-export default { HorizontalSwitch };
+import HorizontalSwitch from './HorizontalSwitch'
+
+export {HorizontalSwitch};
