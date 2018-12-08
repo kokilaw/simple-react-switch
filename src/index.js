@@ -7,6 +7,7 @@ import { HorizontalSwitch } from './lib'
 class App extends Component {
     handleChange = (isChecked, key, event) => {
         // Take action...
+        // Refer README.md for parameter specification.
     }
 
     render() {
