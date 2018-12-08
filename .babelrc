@@ -1,5 +1,5 @@
 {
-  "plugins": ["polished"],
-  "presets": ["react-app"],
-  "ignore": ["**/__tests__", "**/*.test.js", "**/__snapshots__"]
+    "plugins": ["polished"],
+    "presets": ["react-app"],
+    "ignore": ["**/__tests__", "**/*.test.js", "**/__snapshots__"]
 }

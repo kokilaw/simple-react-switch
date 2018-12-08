@@ -1,4 +1,4 @@
-import {keyframes} from "styled-components";
+import { keyframes } from 'styled-components'
 
 const Blob = keyframes`
   0%, 100% {
@@ -10,7 +10,7 @@ const Blob = keyframes`
   60% {
     transform: scale(.96, 1.06);
   }
-`;
+`
 
 const BlobChecked = keyframes`
   0% {
@@ -32,6 +32,6 @@ const BlobChecked = keyframes`
     transform: scaleX(1);
     opacity: 0;
   }
-`;
+`
 
-export {Blob, BlobChecked};
+export { Blob, BlobChecked }

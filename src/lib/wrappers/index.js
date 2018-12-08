@@ -1,3 +1,3 @@
-import HorizontalWrapper from "./HorizontalWrapper";
+import HorizontalWrapper from './HorizontalWrapper'
 
-export {HorizontalWrapper};
+export { HorizontalWrapper }

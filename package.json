@@ -1,52 +1,59 @@
 {
-  "name": "simple-react-switch",
-  "version": "1.0.0",
-  "description": "A simple switch component for ReactJS",
-  "homepage": ".",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "bugs": {
-    "url": "https://github.com/kokilaw/simple-react-switch/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Kokila Widyaratna",
-    "url": "https://kokilaw.github.io"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kokilaw/simple-react-switch.git"
-  },
-  "dependencies": {
-    "polished": "^2.3.1",
-    "prop-types": "^15.6.2",
-    "styled-components": "^4.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build-package": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore '__tests__','spec.js','test.js','__snapshots__'",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "publish-demo": "npm run build && npm run deploy"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "babel-plugin-polished": "^1.1.0",
-    "gh-pages": "^2.0.1",
-    "react-test-renderer": "^16.6.3"
-  }
+    "name": "simple-react-switch",
+    "version": "1.0.0",
+    "description": "A simple switch component for ReactJS",
+    "homepage": "kokilaw.github.io/simple-react-switch",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "bugs": {
+        "url": "https://github.com/kokilaw/simple-react-switch/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kokila Widyaratna",
+        "url": "https://kokilaw.github.io"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kokilaw/simple-react-switch.git"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "build-package": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore '__tests__','spec.js','test.js','__snapshots__'",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "gh-pages -d build",
+        "publish-demo": "npm run build && npm run deploy",
+        "precommit": "NODE_ENV=production lint-staged"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "dependencies": {
+        "polished": "^2.3.1",
+        "prop-types": "^15.6.2",
+        "styled-components": "^4.1.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.0",
+        "babel-eslint": "^10.0.1",
+        "babel-plugin-polished": "^1.1.0",
+        "eslint": "^5.10.0",
+        "eslint-config-airbnb": "^15.1.0",
+        "eslint-config-prettier": "^3.3.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-prettier": "^3.0.0",
+        "eslint-plugin-react": "^7.11.1",
+        "gh-pages": "^2.0.1",
+        "prettier": "^1.15.3",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-scripts": "2.1.1",
+        "react-test-renderer": "^16.6.3"
+    }
 }

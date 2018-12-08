@@ -1,19 +1,19 @@
-import React, {Component} from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import {HorizontalWrapper} from "./wrappers";
+import { HorizontalWrapper } from './wrappers'
 
 class HorizontalSwitch extends Component {
-    onChange = e => {
-        const isChecked = e.target.checked;
+    onChange = (e) => {
+        const isChecked = e.target.checked
         if (this.props.onStateChange !== undefined) {
-            this.props.onStateChange(isChecked, this.props.id, e);
+            this.props.onStateChange(isChecked, this.props.id, e)
         }
-    };
+    }
 
     render() {
-        let {defaultChecked, disabled, id} = this.props;
-        let {onColor, offColor, foregroundColor, disabledColor} = this.props;
+        const { defaultChecked, disabled, id } = this.props
+        const { onColor, offColor, foregroundColor, disabledColor } = this.props
 
         return (
             <HorizontalWrapper
@@ -21,8 +21,7 @@ class HorizontalSwitch extends Component {
                 onColor={onColor}
                 offColor={offColor}
                 foregroundColor={foregroundColor}
-                disabledColor={disabledColor}
-            >
+                disabledColor={disabledColor}>
                 <input
                     id={id}
                     type="checkbox"
@@ -30,9 +29,9 @@ class HorizontalSwitch extends Component {
                     disabled={disabled}
                     onChange={this.onChange}
                 />
-                <span/>
+                <span />
             </HorizontalWrapper>
-        );
+        )
     }
 }
 
@@ -41,16 +40,12 @@ HorizontalSwitch.propTypes = {
     onStateChange: PropTypes.func.isRequired,
     defaultChecked: PropTypes.bool,
     disabled: PropTypes.bool,
-    onColor: PropTypes.string,
-    offColor: PropTypes.string,
-    foregroundColor: PropTypes.string,
-    disabledColor: PropTypes.string
-};
+}
 
 HorizontalSwitch.defaultProps = {
     defaultChecked: false,
     disabled: false,
-    id: "sample-key"
-};
+    id: 'sample-key',
+}
 
-export default HorizontalSwitch;
+export default HorizontalSwitch

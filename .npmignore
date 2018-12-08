@@ -1,5 +1,8 @@
 src
-examples
 .babelrc
 .gitignore
 webpack.config.js
+.prettierrc
+public
+.vscode
+.idea
