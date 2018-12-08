@@ -1,6 +1,6 @@
 # simple-react-switch
 
-[![npm](https://img.shields.io/npm/v/simple-react-switch.svg)](https://www.npmjs.com/package/simple-react-switch)
+[![npm](https://img.shields.io/npm/v/simple-react-switch.svg)](https://www.npmjs.com/package/simple-react-switch) [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 
 A simple toggle switch component for ReactJS inspired from this cool [switch animation](https://dribbble.com/shots/5429846-Switcher-XLIV) by [Oleg Frolov](https://dribbble.com/Volorf).
 
