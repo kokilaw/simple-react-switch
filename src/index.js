@@ -1,25 +1,40 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './style.css'
-import { HorizontalSwitch } from './lib'
+import DemoPage from './demo'
 
-class App extends Component {
-    handleChange = (isChecked, key, event) => {
-        // Take action...
-        // Refer README.md for parameter specification.
-    }
+// class App extends Component {
+//     constructor() {
+//         super()
+//         this.state = { switchState: false }
+//         this.handleChange = this.handleChange.bind(this)
+//     }
 
-    render() {
-        return (
-            <div>
-                <HorizontalSwitch
-                    onStateChange={this.handleChange}
-                    id={'123456'}
-                />
-            </div>
-        )
-    }
-}
+//     handleChange(isChecked, key, event) {
+//         this.setState({ switchState: isChecked })
+//     }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+//     render() {
+//         return (
+//             <div>
+//                 <div>
+//                     <HorizontalSwitch
+//                         onStateChange={this.handleChange}
+//                         id={'123456'}
+//                         onColor={'#48EA8B'}
+//                         offColor={'#FF4651'}
+//                         disabledColor={'#D3D3D3'}
+//                         foregroundColor={'#fff'}
+//                     />
+//                 </div>
+//                 <div style={{ textAlign: 'center' }}>
+//                     {this.state.switchState ? 'ON' : 'OFF'}
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+ReactDOM.render(<DemoPage />, document.getElementById('root'))

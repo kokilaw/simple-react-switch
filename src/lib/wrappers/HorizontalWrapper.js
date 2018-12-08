@@ -9,8 +9,12 @@ import hexColorPropType from '../util/hexColorPropType'
 const HorizontalWrapper = styled.label.attrs((props) => ({
     onColor: props.disabled ? props.disabledColor : props.onColor,
     offColor: props.disabled ? props.disabledColor : props.offColor,
-    offColorShadow: rgba(props.offColor, 0.2),
-    onColorShadow: rgba(props.onColor, 0.2),
+    offColorShadow: props.disabled
+        ? rgba(props.disabledColor, 0.2)
+        : rgba(props.offColor, 0.2),
+    onColorShadow: props.disabled
+        ? rgba(props.disabledColor, 0.2)
+        : rgba(props.onColor, 0.2),
     blobChecked: BlobChecked,
     blob: Blob,
 }))`
