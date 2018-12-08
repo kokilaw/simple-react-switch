@@ -6,15 +6,14 @@ import { Blob, BlobChecked } from './HorizontalAnimations'
 
 import hexColorPropType from '../util/hexColorPropType'
 
-const HorizontalWrapper = styled.label.attrs({
-    onColor: (props) => (props.disabled ? props.disabledColor : props.onColor),
-    offColor: (props) =>
-        props.disabled ? props.disabledColor : props.offColor,
-    offColorShadow: (props) => rgba(props.offColor, 0.2),
-    onColorShadow: (props) => rgba(props.onColor, 0.2),
+const HorizontalWrapper = styled.label.attrs((props) => ({
+    onColor: props.disabled ? props.disabledColor : props.onColor,
+    offColor: props.disabled ? props.disabledColor : props.offColor,
+    offColorShadow: rgba(props.offColor, 0.2),
+    onColorShadow: rgba(props.onColor, 0.2),
     blobChecked: BlobChecked,
     blob: Blob,
-})`
+}))`
     cursor: pointer;
     input {
         display: none;

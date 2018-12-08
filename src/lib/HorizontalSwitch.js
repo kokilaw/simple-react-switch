@@ -13,15 +13,8 @@ class HorizontalSwitch extends Component {
 
     render() {
         const { defaultChecked, disabled, id } = this.props
-        const { onColor, offColor, foregroundColor, disabledColor } = this.props
-
         return (
-            <HorizontalWrapper
-                disabled={disabled}
-                onColor={onColor}
-                offColor={offColor}
-                foregroundColor={foregroundColor}
-                disabledColor={disabledColor}>
+            <HorizontalWrapper {...this.props}>
                 <input
                     id={id}
                     type="checkbox"
