@@ -1,14 +1,14 @@
 {
-  "main.css": "./static/css/main.c9a07ab5.chunk.css",
-  "main.js": "./static/js/main.0052ed28.chunk.js",
-  "main.js.map": "./static/js/main.0052ed28.chunk.js.map",
-  "static/js/1.b444b4f6.chunk.js": "./static/js/1.b444b4f6.chunk.js",
-  "static/js/1.b444b4f6.chunk.js.map": "./static/js/1.b444b4f6.chunk.js.map",
-  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
-  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
-  "static/media/favicon.ico": "./static/media/favicon.0a19d372.ico",
-  "static/css/main.c9a07ab5.chunk.css.map": "./static/css/main.c9a07ab5.chunk.css.map",
-  "index.html": "./index.html",
-  "precache-manifest.c6db2d3cb580902281c72b09796404f1.js": "./precache-manifest.c6db2d3cb580902281c72b09796404f1.js",
-  "service-worker.js": "./service-worker.js"
+  "main.css": "/simple-react-switch/static/css/main.c9a07ab5.chunk.css",
+  "main.js": "/simple-react-switch/static/js/main.0052ed28.chunk.js",
+  "main.js.map": "/simple-react-switch/static/js/main.0052ed28.chunk.js.map",
+  "static/js/1.3f2942d2.chunk.js": "/simple-react-switch/static/js/1.3f2942d2.chunk.js",
+  "static/js/1.3f2942d2.chunk.js.map": "/simple-react-switch/static/js/1.3f2942d2.chunk.js.map",
+  "runtime~main.js": "/simple-react-switch/static/js/runtime~main.fec58844.js",
+  "runtime~main.js.map": "/simple-react-switch/static/js/runtime~main.fec58844.js.map",
+  "static/media/favicon.ico": "/simple-react-switch/static/media/favicon.0a19d372.ico",
+  "static/css/main.c9a07ab5.chunk.css.map": "/simple-react-switch/static/css/main.c9a07ab5.chunk.css.map",
+  "index.html": "/simple-react-switch/index.html",
+  "precache-manifest.82d644dcf53ee7a9684f708e31d60932.js": "/simple-react-switch/precache-manifest.82d644dcf53ee7a9684f708e31d60932.js",
+  "service-worker.js": "/simple-react-switch/service-worker.js"
 }
